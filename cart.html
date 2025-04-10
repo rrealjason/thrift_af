@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thrift_af - Cart</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <h1>My Cart</h1>
+    <nav id="navbar">
+      <a href="index.html">Dashboard</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <section class="cart-section">
+    <h2>Items in MY Cart</h2>
+    <div id="cart-items"></div>
+    <div id="cart-total"></div>
+    <a href="checkout.html" class="btn">Proceed to Checkout</a>
+  </section>
+
+  <!-- Floating Message Icon -->
+  <div class="message-icon" onclick="toggleMessageBox()">
+    💬
+  </div>
+
+  <!-- Message Box -->
+  <div class="message-box" id="messageBox">
+    <p>Website created by Rrealjason.<br>
+    Contact realjason on WhatsApp: <br>
+    <strong>+254741733242</strong><br>
+    for web design and web development.</p>
+    <button onclick="toggleMessageBox()">Close</button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thrift_af - Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <h1>Thrift_af Products</h1>
+    <nav id="navbar">
+      <a href="index.html">Dashboard</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <section class="products-grid">
+    <!-- Repeat for each product -->
+    <div class="product">
+      <img src="image1.jpg" alt="Sneakers" />
+      <h3>Classic Sneakers</h3>
+      <p>Comfortable everyday sneakers perfect for both casual and sporty looks.</p>
+      <p><strong>KES 2,900</strong></p>
+      <button onclick="addToCart(1)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="image2.jpg" alt="Backpack" />
+      <h3>Classic shoes</h3>
+      <p>Spacious and sturdy backpack ideal for school, travel, and outdoor activities.</p>
+      <p><strong>KES 1,500</strong></p>
+      <button onclick="addToCart(2)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="image3.jpg" alt="T-Shirt" />
+      <h3>Lit sport shoes</h3>
+      <p>Soft and breathable cotton t-shirt suitable for everyday wear and layering.</p>
+      <p><strong>KES 800</strong></p>
+      <button onclick="addToCart(3)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="image4.jpeg" alt="Hat" />
+      <h3>Skateboarding sneakers</h3>
+      <p>Trendy sun hat that adds flair to your outfit while keeping you cool.</p>
+      <p><strong>KES 600</strong></p>
+      <button onclick="addToCart(4)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="image5.jpg" alt="Jacket" />
+      <h3>White pumas</h3>
+      <p>Thick, warm jacket made from premium fabric to beat the cold season.</p>
+      <p><strong>KES 4,000</strong></p>
+      <button onclick="addToCart(5)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="image6.jpg" alt="Watch" />
+      <h3>Street hoodie</h3>
+      <p>Elegant wristwatch with a leather strap perfect for official and casual use.</p>
+      <p><strong>KES 1,200</strong></p>
+      <button onclick="addToCart(6)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="image7.jpg" alt="Jeans" />
+      <h3>Jersey orange</h3>
+      <p>Comfortable denim jeans that offer a perfect fit and trendy style.</p>
+      <p><strong>KES 1,800</strong></p>
+      <button onclick="addToCart(7)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="image8.jpg" alt="Hoodie" />
+      <h3>Jersey green</h3>
+      <p>Cozy zip-up hoodie made from fleece material with pockets and a hood.</p>
+      <p><strong>KES 1,400</strong></p>
+      <button onclick="addToCart(8)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="image9.jpg" alt="Sunglasses" />
+      <h3>Jersey yellow</h3>
+      <p>UV-protected stylish sunglasses perfect for beach days and sunny walks.</p>
+      <p><strong>KES 500</strong></p>
+      <button onclick="addToCart(9)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="image10.jpg" alt="Shoulder Bag" />
+      <h3>Baseball cap</h3>
+      <p>Minimalist shoulder bag with enough space to carry your essentials in style.</p>
+      <p><strong>KES 1,000</strong></p>
+      <button onclick="addToCart(10)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="image11.jpg" alt="Luxury Watch" />
+      <h3>Sun cap</h3>
+      <p>High-end wristwatch with stainless steel body and water resistance features.</p>
+      <p><strong>KES 3,500</strong></p>
+      <button onclick="addToCart(11)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="image12.jpg" alt="Leather Boots" />
+      <h3>Leather cap</h3>
+      <p>Rugged yet classy leather boots that match your bold outdoor outfits.</p>
+      <p><strong>KES 3,200</strong></p>
+      <button onclick="addToCart(12)">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Floating Message Icon -->
+  <div class="message-icon" onclick="toggleMessageBox()">
+    💬
+  </div>
+
+  <!-- Message Box -->
+  <div class="message-box" id="messageBox">
+    <p>Website created by Rrealjason.<br>
+    Contact realjason on WhatsApp: <br>
+    <strong>+254741733242</strong><br>
+    for web design and web development.</p>
+    <button onclick="toggleMessageBox()">Close</button>
+  </div>
+
+</body>
+</html>

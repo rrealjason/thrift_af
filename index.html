@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thrift_af - Home</title>
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header with Hamburger Menu -->
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <h1>Thrift_af</h1>
+    <nav id="navbar">
+      <a href="index.html">Dashboard</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to Thrift_af</h2>
+    <p>Your favorite place for quality thrift products in Kenya.</p>
+    <a href="products.html" class="btn">Shop Now</a>
+  </section>
+
+  <!-- Social Media Links -->
+  <footer>
+    <p>Connect with us:</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100084317918244" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/rrrealjason?igsh=NHhlb2QwaXg1OWJ4" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/yourpage" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+      <!-- WhatsApp Icon Link -->
+      <a href="https://wa.me/254741733242" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2025 Thrift_af</p>
+  </footer>
+
+  <!-- Floating Message Icon -->
+  <div class="message-icon" onclick="toggleMessageBox()">
+    💬
+  </div>
+
+  <!-- Message Box -->
+  <div class="message-box" id="messageBox">
+    <p>Website created by Rrealjason.<br>
+    Contact realjason on WhatsApp: <br>
+    <strong>+254741733242</strong><br>
+    for web design and web development.</p>
+    <button onclick="toggleMessageBox()">Close</button>
+  </div>
+
+  <script>
+    // Toggle the menu visibility
+    function toggleMenu() {
+      const menu = document.getElementById('navbar');
+      menu.classList.toggle('show');
+    }
+
+    // Toggle message box visibility
+    function toggleMessageBox() {
+      const messageBox = document.getElementById('messageBox');
+      messageBox.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>

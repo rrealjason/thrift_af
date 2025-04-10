@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thrift_af - Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <h1>Checkout</h1>
+    <nav id="navbar">
+      <a href="index.html">Dashboard</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <section class="checkout-section">
+    <h2>Complete Your Order</h2>
+    
+    <form action="https://formsubmit.co/rrealjason@gmail.com" method="POST">
+      <!-- FormSubmit configuration -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Thrift_af Order">
+      <input type="hidden" name="_template" value="box">
+
+      <label for="name">Your Name:</label>
+      <input type="text" name="Name" id="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" name="Email" id="email" required>
+
+      <label for="message">Message (Optional):</label>
+      <textarea name="Message" id="message" rows="3"></textarea>
+
+      <label for="order-summary">Order Summary:</label>
+      <textarea name="Order Details" id="order-summary" rows="6" readonly></textarea>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+  <!-- Floating Message Icon -->
+  <div class="message-icon" onclick="toggleMessageBox()">
+    💬
+  </div>
+
+  <!-- Message Box -->
+  <div class="message-box" id="messageBox">
+    <p>Website created by Rrealjason.<br>
+    Contact realjason on WhatsApp: <br>
+    <strong>+254741733242</strong><br>
+    for web design and web development.</p>
+    <button onclick="toggleMessageBox()">Close</button>
+  </div>
+
+</body>
+</html>
