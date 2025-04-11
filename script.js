@@ -71,11 +71,24 @@ function removeFromCart(index) {
   location.reload();
 }
 
+// Update order summary for checkout page
+function updateOrderSummary(cartItems) {
+  let summary = '';
+  let imageHtml = '';
+
+  cartItems.forEach(item => {
+    summary += `${item.name} - ${item.price} KES\n${item.desc}\n\n`;
+    imageHtml += `<p><strong>${item.name}</strong><br>${item.desc}<br><img src="${item.image}" width="150"/></p>`;
+  });
+
+  document.getElementById('order-summary').value = summary;
+  const imageInput = document.getElementById('productImages');
+  if (imageInput) {
+    imageInput.value = imageHtml;
+  }
+}
+
 // Autofill checkout form with order summary
 if (document.getElementById("order-summary")) {
-  let summary = "";
-  cart.forEach(item => {
-    summary += `${item.name} - KES ${item.price}\n${item.desc}\n\n`;
-  });
-  document.getElementById("order-summary").value = summary;
+  updateOrderSummary(cart);
 }
